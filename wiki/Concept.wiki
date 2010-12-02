@@ -17,7 +17,7 @@ e-Ink 기술을 기반으로 한 전자책이 인기를 끌고, ePUB라는 표�
   * [http://calibre-ebook.com Calibre]의 경우 쉬운 변환을 보여주지만 국내실정(폰트지정)에는 맞지않는다.
   * [http://tylove.thoth.kr kotxt2epub]은 설계배경과 일치하지만 입맞에 맞는 않는 부분이 있었다.
 
-kotxt2epub 경우 복수개의 입력에 하나의 표지그림만이 존재하므로 batch conversion이라는 개념과는 맞지 않아 보입니다.
+kotxt2epub 경우 복수개의 입력에 하나의 표지그림만이 존재하므로 batch conversion이라는 개념과는 맞지 않는다.
 
 == 설계방향 ==
 
