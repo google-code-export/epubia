@@ -44,7 +44,7 @@ CSS(stylesheet)은 책의 모양과 글꼴을 결정하게 되는데
 epubia 은 ptxt2epub/template 란 디렉토리와 target/ 디렉토리에 있는 파일들을 
 사용하여 ePUB 파일을 만든다.
 
-= 전반적인 ePUB 맞춤(customization) =
+== 전반적인 ePUB 맞춤(customization) ==
 ptxt2epub/template에는 다음 파일들이 존재하며 각각은 다음 역활을 한다.
   * chapter.xhtml : 책내용
   * content.opf   : 책정보
@@ -54,6 +54,6 @@ ptxt2epub/template에는 다음 파일들이 존재하며 각각은 다음 역�
   * generic.css   : 문단 모양 stylesheet
 페이지 모양을 바꾸고 싶다면 generic.css을 수정하면 된다.
 
-= 출력장치에 맞춘 변경 =
+== 출력장치에 맞춘 변경 ==
 target/ 디렉토리 밑에는 여러 이름의 css 파일이 있으며,
 이중 하나를 골라 target.css 라는 이름으로 ePUB 파일에 복사된다.
