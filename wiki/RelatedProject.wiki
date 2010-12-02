@@ -1,0 +1,36 @@
+#summary 관련 프로젝트들
+
+= ePUB 변환 =
+
+  * [http://code.google.com/p/epub-tools/ epub-tools]
+        Java로된 Adobe EPUBGen 엔진을 사용하고 있으며, 
+        frontend engine에는 XSLT 기술을 사용.
+  * [https://code.google.com/p/python-epub-builder/ python-epub-builder]
+        [http://genshi.edgewall.org/ Genshi] template library 기반으로 한 text to epub 변환기.
+        Genshi 자체가 덩치가 있고, 간단한 text만을 대상으로 하여 markup을 넣기가 어려워 수정을 포기.
+  * [http://epubsharp.sourceforge.net/ EPUB Sharp]
+        .NET/C# 기반
+
+= Markup 언어 =
+여러 텍스트용 markup이 존재하고 
+주로 program document를 간단하게 작성하는 용으로 사용된다.
+
+   * [http://docutils.sourceforge.net/rst.html reStructured Text](RST)
+        Python Docutils에서 사용하는 포맷
+   * [http://code.google.com/p/support/wiki/WikiSyntax Google Wiki]
+        여기 문서 작성하는 포맷
+
+= PDF 변환 =
+PDF 생성엔진으로 [http://www.reportlab.com/software/opensource/rl-toolkit/ ReportLab Toolkit]을 대부분 사용하고 있고, 그위에 frontend engine을 올려 변환기들이 나와 있음.
+
+  * [http://code.google.com/p/rst2pdf rst2pdf]
+        reStructured Text를 PDF로 변환
+  * [http://www.xhtml2pdf.com xhtml2pdf] (aka pisa)
+        XHTML을 PDF로 변환
+
+= RSS 언어 =
+RSS 처리는 [http://feedparser.org Universal Feed Parser]가 진리.
+
+  * [http://cafe.naver.com/ebook/82965 rss2epub]
+        [http://ebookcafe.kr 이북카페] 욱님이 만든 python script.
+        Matt's epub.py 라는 간단한 생성기를 사용
