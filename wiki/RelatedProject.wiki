@@ -34,3 +34,14 @@ RSS 처리는 [http://feedparser.org Universal Feed Parser]가 진리.
   * [http://cafe.naver.com/ebook/82965 rss2epub]
         [http://ebookcafe.kr 이북카페] 욱님이 만든 python script.
         Matt's epub.py 라는 간단한 생성기를 사용
+
+
+= 그외 =
+
+  * [http://calibre-ebook.com Calibre]
+         ePUB 툴의 대명사. Python 기반.
+  * [http://code.google.com/p/lrf-epub-tools/ LRFtool]
+        Sony Reader용 포맷인 LRF를 ePUB으로 변환하는 툴이지만
+        그외에도 여러 포맷을 지원
+  * [http://code.google.com/p/epubcheck epubcheck]
+        ePUB 파일을 검사하는 툴. Java 기반.
