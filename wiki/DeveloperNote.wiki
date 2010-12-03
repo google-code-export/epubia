@@ -8,6 +8,7 @@
   * [http://www.activestate.com/activepython/downloads Python 2.6]
   * [http://www.wxpython.org wxPython] GUI widget
   * [http://www.cheetahtemplate.org Cheetah] template library
+  * [http://www.pythonware.com/products/pil/ Python Image Library]
   * py2exe
   * [http://tortoisesvn.tigris.org SVN] version control system
 
