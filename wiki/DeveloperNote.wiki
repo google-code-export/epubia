@@ -42,6 +42,6 @@ ptxt2epub/ 디렉토리에 소스코드 위치
   * book_scraper_naver.py : (Naver OpenAPI 사용)
   * epub_gen.py   : object와 template에서 ePUB 파일을 생성
 
-Scraper는 OpenAPI를 사용하기 때문에 사용자가 키를 받아서 넣어줘야 한다. (현재는 코드에 직접 수정)
+Scraper는 OpenAPI를 사용하기 때문에 사용자가 키를 받아서 넣어줘야 한다.
 
-ptxt2epub.py 는 command-line 유틸리티로 디버깅용으로만 사용되고 실행되진 않는 파일이다.
+ptxt2epub.py 는 command-line 유틸리티로 디버깅용으로만 사용된 파일이다.
