@@ -8,6 +8,9 @@
   * [https://code.google.com/p/python-epub-builder/ python-epub-builder]
         [http://genshi.edgewall.org/ Genshi] template library 기반으로 한 text to epub 변환기.
         Genshi 자체가 덩치가 있고, 간단한 text만을 대상으로 하여 markup을 넣기가 어려워 수정을 포기.
+  * [http://bitbucket.org/wierob/rst2epub/ rst2epub]
+        reStructured Text를 ePUB으로 변환.
+        프로젝트를 완료하고 발견. 괜히 고생했다는 생각이 나게 만든다.
   * [http://epubsharp.sourceforge.net/ EPUB Sharp]
         .NET/C# 기반
 
