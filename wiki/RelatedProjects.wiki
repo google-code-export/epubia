@@ -24,6 +24,8 @@
         Calibre에서 지원한다
    * [http://code.google.com/p/support/wiki/WikiSyntax Google Wiki]
         여기 문서 작성하는 포맷
+   * [http://www.aaronsw.com/2002/html2text/ html2text]
+        HTML의 M은 Markup을 의미한다
 
 = PDF 변환 =
 PDF 생성엔진으로 [http://www.reportlab.com/software/opensource/rl-toolkit/ ReportLab Toolkit]을 대부분 사용하고 있고, 그위에 frontend engine을 올려 변환기들이 나와 있음.
