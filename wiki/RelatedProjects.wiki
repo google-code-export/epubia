@@ -20,7 +20,7 @@
 
    * [http://docutils.sourceforge.net/rst.html reStructured Text](RST)
         Python Docutils에서 사용하는 포맷
-   * [http://daringfireball.net/projects/markdown/ Markdown]
+   * [http://www.freewisdom.org/projects/python-markdown/ Markdown]
         Calibre에서 지원한다
    * [http://code.google.com/p/support/wiki/WikiSyntax Google Wiki]
         여기 문서 작성하는 포맷
