@@ -7,7 +7,7 @@
         frontend engine에는 XSLT 기술을 사용.
   * [https://code.google.com/p/python-epub-builder/ python-epub-builder]
         [http://genshi.edgewall.org/ Genshi] template library 기반으로 한 text to epub 변환기.
-        Genshi 자체가 덩치가 있고, 간단한 text만을 대상으로 하여 markup을 넣기가 어려워 수정을 포기.
+        간단한 text만을 대상으로 하여 markup을 넣기가 어렵고, Genshi 자체가 덩치가 있어보여 수정을 포기.
   * [http://bitbucket.org/wierob/rst2epub/ rst2epub]
         reStructured Text를 ePUB으로 변환.
         프로젝트를 완료하고 발견. 괜히 고생했다는 생각이 나게 만든다.
@@ -22,18 +22,22 @@
         Python Docutils에서 사용하는 포맷
    * [http://www.freewisdom.org/projects/python-markdown/ Markdown]
         Calibre에서 지원한다
+   * [http://www.aaronsw.com/2002/html2text/ html2text]
+        HTML(이것도 Markup의 일종이다)을 Markdown text로 변환
+   * [http://www.textism.com/tools/textile/ Textile]
+        HTML에 대한 controllability가 좋으나, 그만큼 readability는 떨어짐
    * [http://code.google.com/p/support/wiki/WikiSyntax Google Wiki]
         여기 문서 작성하는 포맷
-   * [http://www.aaronsw.com/2002/html2text/ html2text]
-        HTML의 M은 Markup을 의미한다
 
 = PDF 변환 =
 PDF 생성엔진으로 [http://www.reportlab.com/software/opensource/rl-toolkit/ ReportLab Toolkit]을 대부분 사용하고 있고, 그위에 frontend engine을 올려 변환기들이 나와 있음.
 
-  * [http://code.google.com/p/rst2pdf rst2pdf]
-        reStructured Text를 PDF로 변환
   * [http://www.xhtml2pdf.com xhtml2pdf] (aka pisa)
         XHTML을 PDF로 변환
+  * [http://code.google.com/p/rst2pdf rst2pdf]
+        reStructured Text를 PDF로 변환
+  * [http://www.unixuser.org/~euske/python/pdfminer/ PDFMiner]
+        CJK지원하는 PDF parser. 아직 버그가 많다.
 
 = RSS 언어 =
 RSS 처리는 [http://feedparser.org Universal Feed Parser]가 진리.
@@ -43,7 +47,6 @@ HTML 처리는 [http://www.crummy.com/software/BeautifulSoup/ BeautifulSoup]이 
   * [http://cafe.naver.com/ebook/82965 rss2epub]
         [http://ebookcafe.kr 이북카페] 욱님이 만든 python script.
         Matt's epub.py 라는 간단한 생성기를 사용
-
 
 = 그외 =
 
