@@ -52,17 +52,86 @@
 
 = 텍스트 markup =
 
-markup을 문서에 넣어 변환에 필요한 정보등을 주면 
-보다 좋은 결과를 얻을 수 있다. (예: 챕터이름)
+모든 텍스트 입력은 Markdown markup이라고 가정된다.
+Markup을 사용하면 쉽게 그럴듯한 책을 만들 수 있다.
 
-Google의 Wiki 저장용 markup과 유사하다.
+[http://daringfireball.net/projects/markdown/syntax Markdown Syntax] 참고
 
-  * 책이름 : #title 구운몽
-  * 저자명 : #author 홍길동
-  * ISBN   : #isbn 1234567890123
-  * 그외 줄처음이 # 로 시작하면 주석처리
-  * 챕터이름 : = 1장 소년이여 전설이 되라 =
-  * 섹션이름 : == IV ==
-  * 굵게   : `*`진하게`*`
-  * 이탤릭 : `_`이탤릭`_`
-  * 인용문은 `{{{`과 `}}}` 사이에 위치
+==챕터 넣기==
+{{{
+챕터1
+========
+
+# 챕터2
+}}}
+
+==섹션 넣기==
+{{{
+섹션1
+--------------
+
+## 섹션2
+}}}
+
+==인용문==
+{{{
+일반문장
+>  인용문1
+>  인용문2
+
+일반문장
+       인용문
+}}}
+스페이스로 충분히 띄워준다.
+
+==강제 줄바꿈==
+스페이스 두개 이상을 문장뒤에 붙인다.
+
+==그림 넣기==
+{{{
+![텍스트][파일명]
+
+또는
+
+![텍스트][번호]
+
+책 끝에서
+[번호] 파일명
+}}}
+
+==리스트==
+{{{
+  * 아이템 1
+  * 아이템 2
+
+또는
+
+아이템1
+:    설명
+아이템2
+:    설명
+}}}
+
+[http://www.freewisdom.org/projects/python-markdown/Definition_Lists 리스트] 참고
+
+==책정보 넣기==
+문서의 첫부분에 책정보(meta)를 넣어 ePub에 들어갈 정보를 줄 수 있다.
+
+[http://www.freewisdom.org/projects/python-markdown/Meta-Data Meta] 참고
+
+키워드 다음에 ':' 를 스페이스 없이 붙여주면 된다.
+다음은 사용되는 키워드이다.
+
+{{{
+Title:      책제목
+Subtitle:  책소제목
+Author:  저자1
+           저자2
+Translator: 역자
+ISBN:     ISBN번호
+cover_url: http://어쩌고  또는 file://저쩌고
+}}}
+
+그외에도 [http://www.freewisdom.org/projects/python-markdown/Footnotes Footnote] 도 넣을 수 있다.
+
+아직 그외의 Extension들은 ([http://www.freewisdom.org/projects/python-markdown/Tables 테이블] 포함)은 아직 지원하지 않는다.
