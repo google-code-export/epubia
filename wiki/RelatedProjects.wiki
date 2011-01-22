@@ -11,6 +11,8 @@
   * [http://bitbucket.org/wierob/rst2epub/ rst2epub]
         reStructured Text를 ePUB으로 변환.
         프로젝트를 완료하고 발견. 괜히 고생했다는 생각이 나게 만든다.
+  * [http://johnmacfarlane.net/pandoc/ Universal Document Converter(Pandoc)]
+        Markdown, ePub, PDF 를 포함한 다양한 포맷을 변환.
   * [http://epubsharp.sourceforge.net/ EPUB Sharp]
         .NET/C# 기반
 
@@ -57,3 +59,5 @@ HTML 처리는 [http://www.crummy.com/software/BeautifulSoup/ BeautifulSoup]이 
         그외에도 여러 포맷을 지원
   * [http://code.google.com/p/epubcheck epubcheck]
         ePUB 파일을 검사하는 툴. Java 기반.
+  * [http://www.stylusstudio.com/xsllist/200901/post90300.html XSLT를 사용한 ePUB]
+        XSLT를 공부해야하나...
