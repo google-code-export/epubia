@@ -9,7 +9,7 @@ ePUB은 기본적으로 xml과 그림 파일들을 zip으로 묶어놓은 것이
 == 고정 파일들 ==
 ePUB에는 mimetype 과 META-INF/container.xml 파일이 항상 존재해야 한다.
 
-  * mimetype : 파일의 형식을 알림
+  * mimetype : 파일의 형식을 알림 (_zip파일에 비압축으로 저장되어 있어야함_)
   * container.xml : 책정보파일(OPF)을 가르킴
 
 == 책정보 (OPF 파일) ==
