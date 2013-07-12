@@ -58,12 +58,16 @@ a[epub|type='noteref'] { vertical-align: super; }
 
 *content.opf*에 다음을 추가한다.
 {{{
-<meta property="rendition:layout">pre-paginated</meta>
-<meta property="rendition:spread">auto</meta>
-<meta property="rendition:orientation">auto</meta>
-...
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" prefix="rendition: http://www.idpf.org/vocab/rendition/#">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+  ...
+  <meta property="rendition:layout">pre-paginated</meta>
+  <meta property="rendition:spread">auto</meta>
+  <meta property="rendition:orientation">auto</meta>
+  ...
+</metadata>
 <spine page-progression-direction="rtl">
-...
+  ...
 </spine>
 }}}
 rtl은 '좌에서 우로 보기'를 뜻한다.
