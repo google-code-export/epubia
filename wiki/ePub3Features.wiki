@@ -1,0 +1,84 @@
+#summary ePUB3에서 확장된 점
+#labels Phase-Requirements
+
+= ePUB3 =
+
+[http://www.idpf.org/epub/30/spec/ idpf]에서 interactive한 전자책을 목표로 ePUB 3.0을 내놓았다.
+
+기술적으로는 HTML5+CSS3+Javascript를 사용하여 웹프로그래밍이 가능하도록 하였다.
+
+== 구조 ==
+
+ePUB의 구조를 대부분 유지하고 있다. 
+
+가장 크게 바뀐건 [http://www.idpf.org/epub/30/spec/epub30-contentdocs.html#sec-xhtml-nav Navigation] 부분.
+*toc.ncx* 이 *nav.xhtml* 이라는 파일로 대체되었다. 구조도 바뀜.
+
+== 지원되는 기능들 ==
+
+  # 스크립트를 이용한 interactive 지원
+  # 본문과 독립된 그림표시 (`<figure>`)
+  # 주석 (`<aside epub:type="footnote">`)
+  # 일본책 지원(우에서 좌로 보기와 세로 쓰기)
+  # 수학식 (MathML)
+  # 오디오, 비디오 (audio, video 태그와 SMIL 파일)
+  # 머리글, 바닥글 (oeb-page-head, oeb-page-foot)
+  # [http://www.idpf.org/epub/fxl/ fixed layout] 지원
+
+[https://code.google.com/p/epub-samples/wiki/FeatureMatrix 참고]
+
+= 구현 예 =
+
+[https://code.google.com/p/epub-samples/wiki/SamplesListing 샘플참고]
+
+== 주석달기 ==
+
+본문
+{{{
+설명이 필요한 글<a epub:type="noteref" href="#n1">1</a>
+}}}
+{{{
+<aside epub:type="footnote"><p>설명글</p></aside>
+}}}
+
+`<aside>`는 평소 화면에서는 표시되어선 안된다.
+확인해본 리더 중에 iBooks에서만이 제대로 동작했다.
+
+주석번호를 조그맣게 보이게 하기 위해선 CSS에 다음을 추가한다.
+{{{
+@namespace epub "http://www.idpf.org/2007/ops";
+
+a[epub|type='noteref'] { vertical-align: super; }
+}}}
+
+== 일본만화 ==
+
+만화책과 같이 이미 편집된 책을 보기 위해선 fixed layout을 사용한다.
+
+*content.opf*에 다음을 추가한다.
+{{{
+<meta property="rendition:layout">pre-paginated</meta>
+<meta property="rendition:spread">auto</meta>
+<meta property="rendition:orientation">auto</meta>
+...
+<spine page-progression-direction="rtl">
+...
+</spine>
+}}}
+rtl은 '좌에서 우로 보기'를 뜻한다.
+
+XHTML
+{{{
+  ...
+  <div class="page"><img src="../Image/page004.jpg" alt="page 4"/></div>
+  ...
+}}}
+
+CSS
+{{{
+img {
+    position: absolute;
+    margin: 0;
+    z-index: 0;
+}
+}}}
