@@ -74,9 +74,9 @@ a[epub|type='noteref'] { vertical-align: super; }
   ...
 </spine>
 }}}
-rtl은 '좌에서 우로 보기'를 뜻한다.
+*rtl* 은 '좌에서 우로 보기'를 뜻한다.
 
-_spin_ 에서 페이지가 열리는 방향을 정할 수 있다.(page-spread-right, page-spread-left)
+또한 각 페이지가 열리는 방향을 정할 수 있다.(page-spread-right, page-spread-left)
 
 rendition:spread-both를 같이 이용하면 책처럼 보이게 할 수도 있다.
 
