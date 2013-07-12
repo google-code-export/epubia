@@ -10,7 +10,7 @@
 == 구조 ==
 
 ePUB의 구조를 대부분 유지하고 있다.
-*content.opf*안에 정의된 `<package version="3.0'>`으로 ePUB2와 구분됨.
+*content.opf* 안에 정의된 `<package version="3.0">`으로 ePUB2와 구분됨.
 
 가장 크게 바뀐건 [http://www.idpf.org/epub/30/spec/epub30-contentdocs.html#sec-xhtml-nav Navigation] 부분.
 *toc.ncx* 이 *nav.xhtml* 이라는 파일로 대체되었다. 구조도 바뀜.
