@@ -20,7 +20,7 @@
 
 [https://code.google.com/p/epub-samples/wiki/FeatureMatrix 참고]
 
-== 구조 ==
+== 파일구조 ==
 
 ePUB의 구조를 대부분 유지하고 있다.
 *content.opf* 안에 정의된 `<package version="3.0">`으로 ePUB2와 구분됨.
@@ -28,11 +28,13 @@ ePUB의 구조를 대부분 유지하고 있다.
 가장 크게 바뀐건 [http://www.idpf.org/epub/30/spec/epub30-contentdocs.html#sec-xhtml-nav Navigation] 부분.
 *toc.ncx* 이 *nav.xhtml* 이라는 파일로 대체되었다. 구조도 바뀜.
 
-== 기술방식 ==
+== 책구조 기술 ==
 
-ePUB3도 이전 버전과 마찬가지로 XHTML을 기반으로 한다. 다만 기존에는 웹프로그래밍과 거의 유사했던데 비해, 이제는 *`<section>`* tag로 전자책에 관련된 정보를 줄 수 있다.
+ePUB3도 이전 버전과 마찬가지로 XHTML을 기반으로 한다.
+다만 기존에는 웹프로그래밍과 거의 유사했던데 비해, 이제는 *`<section>`* tag로 전자책 구조에 관련된 정보를 줄 수 있다.
 
-예로 본문의 경우
+다음은 본문을 section tag로 감싼 예이다.
+
 {{{
 <section epub:type="part">
   <h1>1 부</h1>
@@ -42,7 +44,8 @@ ePUB3도 이전 버전과 마찬가지로 XHTML을 기반으로 한다. 다만 �
   </section>
 </section>
 }}}
-여기서 핵심은 *`epub:type`* 이라는 parameter로 [http://www.idpf.org/epub/vocab/structure/ 스펙]에는 여러 책에 관련된 값들을 정의해 놓고 있다.
+
+여기서 핵심은 *`epub:type`* 이라는 parameter로 [http://www.idpf.org/epub/vocab/structure/ Structure Semantic 스펙]에는 책에 관련된 여러 값들을 정의해 놓고 있다.
 
 이 값들은 `<section>`외에도 여러 곳에서 쓰이게 된다.
 
