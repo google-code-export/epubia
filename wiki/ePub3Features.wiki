@@ -58,8 +58,7 @@ ePUB3도 이전 버전과 마찬가지로 XHTML을 기반으로 한다.
 본문
 {{{
 설명이 필요한 글<a epub:type="noteref" href="#n1">1</a>
-}}}
-{{{
+...
 <aside epub:type="footnote"><p>설명글</p></aside>
 }}}
 
