@@ -1,5 +1,5 @@
 #summary 입력 한글 TEXT
-#labels Phase-Design
+#labels Featured
 
 = 입력 텍스트 형식 =
 
